@@ -9,7 +9,9 @@ amoc-hackathon
                 (__)\       )\/\
                     ||----w |
                     ||     ||
-    ```
+```
+
+```
 Project Organization
 ------------
 
