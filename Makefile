@@ -19,3 +19,6 @@ docker-run-rapids:
 		--mount type=bind,source=${PWD},target=/rapids/project \
 		--workdir=/rapids --env PYTHONPATH=/rapids/project/src \
     	rapidsai/rapidsai-core:cuda10.2-runtime-ubuntu18.04
+
+base-dataset:
+	python3 src/generate-base-dataset.py --input "data/hackathon_dataset/fora/*.csv" --output "data/base.parquet"
