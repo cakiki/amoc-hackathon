@@ -1,6 +1,6 @@
 vanilla-docker-build-image:
 	docker build -t amoc:0.0.1 ./dockerfiles/vanilla/
-gpu-docker-build-image-gpu:
+gpu-docker-build-image:
 	docker build -t amoc-gpu:0.0.1 ./dockerfiles/gpu/
 vanilla-docker-run-jupyter:
 	docker run --rm -it -p 8888:8888 -p 9999:9999 -p 6006:6006 \
@@ -8,7 +8,7 @@ vanilla-docker-run-jupyter:
 	--mount type=bind,source=${PWD},target=/home/jovyan/work --name amoc-vanilla \
 	--workdir=/home/jovyan/work \
 	 amoc:0.0.1
-gpu-docker-run-jupyter-gpu:
+gpu-docker-run-jupyter:
 	docker run --rm -it -p 8888:8888 --gpus all --env PYTHONPATH=/tf/src --name amoc-gpu \
 			--mount type=bind,source=${PWD},target=/tf --workdir=/tf \
 			amoc-gpu:0.0.1
