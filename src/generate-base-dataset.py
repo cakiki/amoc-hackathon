@@ -23,7 +23,7 @@ for file in glob.glob(INPUT_PATH):
 df = pd.concat(df)
 
 # generate row-wise UUIDs as primary key
-df.loc[:, "uuid"] = df.apply(lambda g: str(uuid.uuid4()), axis=1)
+df.loc[:, "uuid"] = df.apply(lambda x: hash(tuple(x)), axis = 1)
 
 # ensure strict data typing
 df = df.astype({
