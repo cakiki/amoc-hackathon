@@ -21,4 +21,4 @@ docker-run-rapids:
     	rapidsai/rapidsai-core:cuda10.2-runtime-ubuntu18.04
 
 base-dataset:
-	python3 src/generate-base-dataset.py --input "data/hackathon_dataset/fora/*.csv" --output "data/base.parquet"
+	python3 src/data/generate-base-dataset.py --input "data/hackathon_dataset/fora/*.csv" --output "data/base.parquet"
