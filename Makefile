@@ -40,6 +40,9 @@ download-original:
 	unzip data/hackathon_dataset.zip -d data/hackathon_dataset
 	rm data/hackathon_dataset.zip
 
+download-base:
+	sh data/download.sh 1Co8oS32F2AthYcUbsgRj36DqIpjgtA6E  data/base.parquet
+
 download-embeddings: download-embeddings-body download-embeddings-subject download-embeddings-category
 
 download-embeddings-body:
@@ -50,4 +53,6 @@ download-embeddings-category:
 
 download-embeddings-subject:
 	sh data/download.sh 1SwYpavtV9p8C7pp-Y_F9ycGC9HzKmhX0  data/subject_embeddings.npy
-	
+
+download-embeddings-bertweet:
+	sh data/download.sh 1OsYqdc-nmtsAtelfvHkVgsF-XMOR0i7B data/body_bertweet_embeddings.npy
