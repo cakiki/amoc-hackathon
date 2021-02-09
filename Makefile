@@ -33,3 +33,21 @@ vanilla-docker-base-dataset:
 
 gpu-docker-base-dataset:
 	docker exec amoc-gpu python src/generate-base-dataset.py --input "data/hackathon_dataset/fora/*.csv" --output "data/base.parquet"
+    
+# File download targets
+download-original:
+	sh data/download.sh 1ccXju1ZkyqKn8yBZV4TPkz166JRWKg3F data/hackathon_dataset.zip
+	unzip data/hackathon_dataset.zip -d data/hackathon_dataset
+	rm data/hackathon_dataset.zip
+
+download-embeddings: download-embeddings-body download-embeddings-subject download-embeddings-category
+
+download-embeddings-body:
+	sh data/download.sh 1olZ1xCFF5JLCb8cQpCJstxbrzvZmpqKh  data/body_embeddings.npy
+
+download-embeddings-category:
+	sh data/download.sh 10EtGe4jk4dZTtPRiWma2uxtw2RMubwN6  data/category_embeddings.npy
+
+download-embeddings-subject:
+	sh data/download.sh 1SwYpavtV9p8C7pp-Y_F9ycGC9HzKmhX0  data/subject_embeddings.npy
+	
