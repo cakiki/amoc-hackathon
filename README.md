@@ -189,9 +189,13 @@ foo@bar:/amoc-hackathon$ make gpu-docker-run-jupyter
 ```console
 foo@bar:/amoc-hackathon$ make docker-run-rapids
 ```
-#### Downloading the dataset as a consolidated Parquet dataframe:
+#### Download the dataset as a consolidated Parquet dataframe:
 ```console
 foo@bar:/amoc-hackathon$ make download-base
+```
+#### Download the dasbhoard Parquet dataframe:
+```console
+foo@bar:/amoc-hackathon$ make download-dashboard-dataset
 ```
 #### Downloading the embeddings:
 ```console
