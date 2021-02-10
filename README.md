@@ -13,6 +13,8 @@ AMoC Hackathon
 
 Sometime Github refuses to render jupyter notebooks; use this [nbviewer page](https://nbviewer.jupyter.org/github/cakiki/amoc-hackathon/tree/main/notebooks/) to see the notebooks in the browser with no live python kernel.
 
+To run the dashboard, make sure you've run the data download targets from the Makefile, and make sure you're running a container with host networking because the Panel Server chooses a random port. (**network** in Makefile target)
+
 ## Context:
 The following is taken verbatim from the [Hackathon description](https://www.eventbrite.co.uk/e/amoc-hackathon-tickets-137288520661):
 
@@ -34,7 +36,10 @@ The following is taken verbatim from the [Hackathon description](https://www.eve
 ## Project Hierarchy
 
 Local output of `tree -s --charset X .` :
-
+<details>
+<summary><b>Tree</b>
+</summary>
+<p>
 <pre><font color="#5C5CFF"><b>.</b></font>
 |-- [       4096]  <font color="#5C5CFF"><b>data</b></font>
 |   |-- [  575721195]  base.parquet
@@ -161,6 +166,36 @@ Local output of `tree -s --charset X .` :
     `-- [       1283]  utils.py
 
 </pre>
+</p>
+</details>
 
+## Makefile targets examples (See the Makefile for more targets)
+
+#### Regular Image:
+```console
+foo@bar:/amoc-hackathon$ make vanilla-docker-build-image
+```
+```console
+foo@bar:/amoc-hackathon$ make vanilla-docker-run-jupyter
+```
+#### GPU Image:
+```console
+foo@bar:/amoc-hackathon$ make gpu-docker-build-image
+```
+```console
+foo@bar:/amoc-hackathon$ make gpu-docker-run-jupyter
+```
+#### NVIDIA RAPIDS Image:
+```console
+foo@bar:/amoc-hackathon$ make docker-run-rapids
+```
+#### Downloading the dataset as a consolidated Parquet dataframe:
+```console
+foo@bar:/amoc-hackathon$ make download-base
+```
+#### Downloading the embeddings:
+```console
+foo@bar:/amoc-hackathon$ make download-embeddings-body
+```
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
