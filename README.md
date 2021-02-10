@@ -11,6 +11,8 @@ amoc-hackathon
                     ||     ||
 ```
 
+Sometime Github refuses to render jupyter notebooks; use this [nbviewer page](https://nbviewer.jupyter.org/github/cakiki/amoc-hackathon/tree/main/notebooks/) to see the notebooks in the browser with no live python kernel.
+
 ## Context:
 The following is taken verbatim from the Hackathon description:
 
@@ -21,6 +23,11 @@ The following is taken verbatim from the Hackathon description:
 > 1. **Longitudinal visualisation:** Create an innovative visualisation representing the datasets over time, with particular attention to how significant events might affect the nature of posting on the forums.
 
 > 2. **Author re-identification:**  Train a competitive classifier to re-identify individuals' accounts across different forums, drawing on stylometric and temporal features.
+
+## Team Members:
+* Lukas Gienapp: [Affilitation](https://temir.org/people.html)
+
+* Christopher Akiki: [Affiliation 1](https://temir.org/people.html) / [Affilitation 2](https://www.scads.de/en/about-us/research-staff)
 
 ## Project Hierarchy
 
