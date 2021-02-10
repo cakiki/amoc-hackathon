@@ -1,4 +1,4 @@
-amoc-hackathon
+AMoC Hackathon
 ==============================
 ```
      _______________________________________
@@ -18,7 +18,7 @@ The following is taken verbatim from the [Hackathon description](https://www.eve
 
 >Bristol Cyber Security Group is hosting a cybercrime hackathon. Groups from select institutions are invited to create teams of 4 to tackle a three-day intensive hackathon.
 
-> The hackathon is aligned with our AMoC project (Advanced Modelling of Cyber Criminal Careers), which aims to tackle financially-motivated cybercrime on Darknet Markets by gaining a better understanding of cyber offenders, their motives, the interventions effective at disrupting their activities, the different roles within cybercriminal networks and how these evolve over time. Key outputs from the project will contribute to a software toolkit designed to assist law enforcement in their cybercrime investigations.
+> The hackathon is aligned with our [AMoC project](https://research-information.bris.ac.uk/en/projects/amoc-advanced-modelling-of-cyber-criminal-careers) (Advanced Modelling of Cyber Criminal Careers), which aims to tackle financially-motivated cybercrime on Darknet Markets by gaining a better understanding of cyber offenders, their motives, the interventions effective at disrupting their activities, the different roles within cybercriminal networks and how these evolve over time. Key outputs from the project will contribute to a software toolkit designed to assist law enforcement in their cybercrime investigations.
 
 > Teams will compete against each other on two data-driven cybercrime investigation tasks exploiting timestamped textual observations of underground cryptomarkets:
 
