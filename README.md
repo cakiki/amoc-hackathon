@@ -14,11 +14,13 @@ amoc-hackathon
 Sometime Github refuses to render jupyter notebooks; use this [nbviewer page](https://nbviewer.jupyter.org/github/cakiki/amoc-hackathon/tree/main/notebooks/) to see the notebooks in the browser with no live python kernel.
 
 ## Context:
-The following is taken verbatim from the Hackathon description:
+The following is taken verbatim from the [Hackathon description](https://www.eventbrite.co.uk/e/amoc-hackathon-tickets-137288520661):
 
->The AMoC project (Advanced Modelling of Cyber Criminal Careers) aims to tackle financially-motivated cybercrime on Darknet Markets by gaining a better understanding of the cyber offenders, their motives, interventions effective at disrupting their activities, different roles within cybercriminal networks and how these evolve over time. Key outputs from the project will contribute to a software toolkit designed to assist law enforcement in their cybercrime investigations.
+>Bristol Cyber Security Group is hosting a cybercrime hackathon. Groups from select institutions are invited to create teams of 4 to tackle a three-day intensive hackathon.
 
-> The Hackathon will begin with a call to arms from colleagues (expert panel including David Wall (University of Leeds), Lorenzo Cavallaro (KCL), Erik van de Sandt (Dutch High Tech Crime Unit), Claudia Peersman, Matthew Edwards (University of Bristol AMoC team)), situating the tasks in the real world – please do ask the panel questions. We will then give you all access to the datasets so that you can undertake the following tasks:
+> The hackathon is aligned with our AMoC project (Advanced Modelling of Cyber Criminal Careers), which aims to tackle financially-motivated cybercrime on Darknet Markets by gaining a better understanding of cyber offenders, their motives, the interventions effective at disrupting their activities, the different roles within cybercriminal networks and how these evolve over time. Key outputs from the project will contribute to a software toolkit designed to assist law enforcement in their cybercrime investigations.
+
+> Teams will compete against each other on two data-driven cybercrime investigation tasks exploiting timestamped textual observations of underground cryptomarkets:
 
 > 1. **Longitudinal visualisation:** Create an innovative visualisation representing the datasets over time, with particular attention to how significant events might affect the nature of posting on the forums.
 
