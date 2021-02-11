@@ -11,6 +11,13 @@ vanilla-docker-run-jupyter:
 	--workdir=/home/jovyan/work \
 	 amoc:0.0.1
 
+network-vanilla-docker-run-jupyter:
+	docker run --rm -it --network host \
+	--env PYTHONPATH=/home/jovyan/work/src \
+	--mount type=bind,source=${PWD},target=/home/jovyan/work --name amoc-vanilla \
+	--workdir=/home/jovyan/work \
+	 amoc:0.0.1
+
 gpu-docker-run-jupyter:
 	docker run --rm -it -p 8888:8888 --gpus all --env PYTHONPATH=/tf/src --name amoc-gpu \
 			--mount type=bind,source=${PWD},target=/tf --workdir=/tf \
@@ -62,3 +69,6 @@ download-embeddings-subject:
 
 download-embeddings-bertweet:
 	sh data/download.sh 1OsYqdc-nmtsAtelfvHkVgsF-XMOR0i7B data/body_bertweet_embeddings.npy
+
+download-dashboard-dataset:
+	sh data/download.sh 1QzwQdYNFlMJX3GQTgq8AKZZRJhixaWJK data/final.parquet
